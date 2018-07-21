@@ -29,8 +29,8 @@ app.use(express.static("public"));
 // credit to davesrose for the if/else setup
 if(process.env.NODE_ENV == "production"){
 
-  mongoose.connect("mongodb://localhost/newsScrape");
-  //mongoose.connect("mongodb://heroku_cslh0zn6:4ng0b98nh1j97mpffs421eqb1l@ds139954.mlab.com:39954/heroku_cslh0zn6");
+
+  mongoose.connect("mongodb://localhost/mongoHeadlines");
 }
 else{
   mongoose.connect("mongodb://localhost/newsScrape");
